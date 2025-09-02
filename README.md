@@ -3,4 +3,4 @@
 ## Проект
 Этот репозиторий является каркасом для будущего веб-приложения.
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://Rennix5321.github.io/Rennix5321.github.io/)
+- [Публичная страница на GitHub Pages](https://Rennix5321.github.io/my-awesome-project/)
