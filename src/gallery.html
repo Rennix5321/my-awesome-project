@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Галерея - Название вашего сайта</title>
+  <meta name="description" content="Галерея наших работ и проектов">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <img class="site-header__brand" src="assets/favicon.ico" alt="Логотип компании" width="50" height="50">
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="site-nav__list">
+        <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li>
+        <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="gallery.html" aria-current="page">Галерея</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <h1>Наша галерея работ</h1>
+    <section class="section">
+      <h2 class="section__title">Адаптивные изображения в действии</h2>
+      <div class="image-demo">
+        <h3>1. Базовое адаптивное изображение</h3>
+        <div class="image-container">
+          <img src="https://picsum.photos/800/400?random=1" alt="Современный веб-дизайн" class="responsive-image" loading="lazy">
+        </div>
+      </div>
+      <div class="image-demo">
+        <h3>2. Picture element</h3>
+        <div class="image-container">
+          <picture>
+            <source type="image/webp" srcset="https://picsum.photos/800/400?random=2">
+            <img src="https://picsum.photos/800/400?random=2" alt="Адаптивный дизайн" class="responsive-image" loading="lazy">
+          </picture>
+        </div>
+      </div>
+      <div class="image-demo">
+        <h3>3. Retina поддержка</h3>
+        <div class="image-container">
+          <img src="https://picsum.photos/100/100?random=3" srcset="https://picsum.photos/200/200?random=3 2x" alt="Логотип компании" class="retina-image" loading="lazy">
+        </div>
+      </div>
+      <div class="image-demo">
+        <h3>4. Object-fit</h3>
+        <div class="object-fit-demo">
+          <div class="object-fit-item">
+            <img src="https://picsum.photos/300/200?random=4" alt="Cover пример" class="object-fit-cover" loading="lazy">
+            <span>object-fit: cover</span>
+          </div>
+          <div class="object-fit-item">
+            <img src="https://picsum.photos/300/200?random=5" alt="Contain пример" class="object-fit-contain" loading="lazy">
+            <span>object-fit: contain</span>
+          </div>
+        </div>
+      </div>
+      <div class="image-demo">
+        <h3>5. Адаптивная галерея</h3>
+        <div class="gallery-4-col">
+          <div class="gallery__item"><div class="gallery__image-container"><img src="https://picsum.photos/400/300?1" class="gallery__image" alt="Веб-приложение" loading="lazy"></div><div class="gallery__caption">Бизнес-приложение</div></div>
+          <div class="gallery__item"><div class="gallery__image-container"><img src="https://picsum.photos/400/300?2" class="gallery__image" alt="Мобильное приложение" loading="lazy"></div><div class="gallery__caption">Мобильное приложение</div></div>
+          <div class="gallery__item"><div class="gallery__image-container"><img src="https://picsum.photos/400/300?3" class="gallery__image" alt="UI/UX дизайн" loading="lazy"></div><div class="gallery__caption">UI/UX дизайн</div></div>
+          <div class="gallery__item"><div class="gallery__image-container"><img src="https://picsum.photos/400/300?4" class="gallery__image" alt="Брендинг" loading="lazy"></div><div class="gallery__caption">Брендинг</div></div>
+          <div class="gallery__item"><div class="gallery__image-container"><img src="https://picsum.photos/400/300?5" class="gallery__image" alt="Интернет-магазин" loading="lazy"></div><div class="gallery__caption">E-commerce</div></div>
+          <div class="gallery__item"><div class="gallery__image-container"><img src="https://picsum.photos/400/300?6" class="gallery__image" alt="Корпоративный сайт" loading="lazy"></div><div class="gallery__caption">Корпоративный сайт</div></div>
+          <div class="gallery__item"><div class="gallery__image-container"><img src="https://picsum.photos/400/300?7" class="gallery__image" alt="Лендинг" loading="lazy"></div><div class="gallery__caption">Лендинг</div></div>
+          <div class="gallery__item"><div class="gallery__image-container"><img src="https://picsum.photos/400/300?8" class="gallery__image" alt="Dashboard" loading="lazy"></div><div class="gallery__caption">Dashboard</div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
+    <p>Телефон: +7 (123) 456-78-90</p>
+  </footer>
+</body>
+</html>
